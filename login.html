@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+ 	<meta charset="utf-8"> 
+ 	<title>SIGN IN</title> 
+	
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+*{
+padding-left:30px;
+font-family:cursive;}
+body {
+  background-image: url('d2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+<script>
+window.addEventListener( "load", start, false );
+function start()
+{
+document.getElementById("fname").addEventListener("focus",focusone, false );
+document.getElementById("fname").addEventListener("blur", blurone, false );
+document.getElementById("myform").addEventListener("submit",subfun, false );
+document.getElementById("myform").addEventListener("reset",resetfun, false );
+}
+
+function focusone() {document.getElementById("help").innerHTML="Email" ;}
+function blurone() { document.getElementById("help").innerHTML="Password" ;}
+function subfun() 
+{ window.alert("Are Sure to submit");
+  window.alert("you are successfully signed in");
+}
+function resetfun() {window.alert("Are Sure to reset")}
+</script>
+
+</head>
+
+
+<body>
+<form id="myform"><br>
+<h2>SIGN IN</h2><br>
+Enter Email: <input type="text" id="fname"><br><br>
+Enter Password:<input type="password" id="pwd"><br><br>
+<input type="submit"  id="sub">
+<input type="reset"  id="reset">
+</form>
+<p id="help" style="border:solid; height:70pt;"></p>
+  
+
+<div class="form-group">
+ 	<a href="#">Forgot Password?</a><br><BR> 
+ 	<a href="#create">New to Intellect?</a> 
+</div>
+
+</body> 
+</html> 
