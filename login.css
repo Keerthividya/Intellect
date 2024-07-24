@@ -1,0 +1,47 @@
+body 
+{ 
+	margin: 0;  	
+	padding: 0;  	
+	background-color:#B7B9B8;		
+	font-family: cursive; 
+}
+.loginbox 
+{ 
+width: 500px; height: 420px;  background: transparent; 
+color: BLACK; top: 35%; left: 50%; position: absolute; transform: translate(-50%,-50%); 
+box-sizing: border-box; 
+padding: 70px 30px; 
+}  
+h2 
+{ 
+ 	margin: 0;  	
+	padding: 0 0 20px;  	
+	text-align: center;  	
+	font-size: 25px;  	
+	color: black; 
+} 
+.loginbox input{ 
+ 	width: 80%;  	
+	margin-bottom: 20px;
+	font-family: cursive  	
+	color: black; 
+}
+.loginbox input[type="text"],input[type="password"] 
+{ 
+ 	border: none; 
+ 	border-bottom: 1px solid #fff;  	
+	background: transparent;  	
+	outline: none;  	
+	height: 13px;  	
+	font-size: 17px;  	
+	font-family: cursive; 
+} 
+.loginbox input[type="submit"] 
+{ 
+ 	font-family: cursive;
+	border: none; 	
+	outline: none;  	
+	height: 30px;  	
+	background: black;  	
+	color: #fff; 
+} 
